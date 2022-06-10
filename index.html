@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+      <title>Job application</title>
+      <link rel="stylesheet" type="text/css" href="styles.css" />
+      <meta charset="utf-8">
+      <meta name="viewport" content="initial-scale=1, width=device-width">
+  </head>
+
+  <body>
+      
+    <header>
+        <h1 id="title">Programming skills</h1>
+        <p id="description">Please fill this form with your developer background information</p>
+    </header>
+
+    <main>
+        <form id="survey-form">
+            <fieldset>
+                <label id="name-label">Full Name: <input id="name" type="text" placeholder="Enter your name" required></label>
+                <label id="email-label">Email: <input id="email" type="email" placeholder="Enter your email"required></label>
+                <label id="number-label">Age: <input id="number" type="number" placeholder="Age" min="18" max="80"></label>
+            </fieldset>
+
+            <fieldset>
+                <label>Select work model: <select class="dropdown" required> 
+                    <option value="" selected hidden disabled>Select</option>
+                    <option value="remote">Remote</option>
+                    <option value="in-office">In-Office</option>
+                    <option value="hybrid">Hybrid</option>
+                </select></label>
+        
+                <label>Immediate and full-time availability?</label>
+                    <div id="availability">
+                        <input type="radio" name="yes-no" value="yes" class="inline" checked><label> Yes</label>
+                        <input type="radio" name="yes-no" value="no" class="inline"><label> No</label>
+                    </div>
+            </fieldset>
+
+            <fieldset>
+                <label> Select the technologies you are experienced with:</label>
+                <div id="checkbox">
+                    <input type="checkbox" value="java" class="tech"><label>Java</label> 
+                    <input type="checkbox" value="javascript" class="tech"><label>JavaScript</label> 
+                    <input type="checkbox" value="python" class="tech"><label>Python</label> 
+                    <input type="checkbox" value="r" class="tech"><label>R</label> 
+                    <input type="checkbox" value="php" class="tech"><label>PHP</label> 
+                    <input type="checkbox" value="c++" class="tech"><label>C++</label> 
+                    <input type="checkbox" value="ruby" class="tech"><label>Ruby</label>
+                    <input type="checkbox" value="go" class="tech"><label>Go</label> 
+                    <input type="checkbox" value="html" class="tech"><label>HTML</label> 
+                    <input type="checkbox" value="css" class="tech"><label>CSS</label> 
+                    <input type="checkbox" value="jquery" class="tech"><label>JQuery</label>
+                    <input type="checkbox" value="mysql" class="tech"><label>MySQL</label>
+                    <input type="checkbox" value="sqlite" class="tech"><label>SQLite</label>
+                    <input type="checkbox" value="json" class="tech"><label>Json</label> 
+                    <input type="checkbox" value="react" class="tech"><label>React</label>
+                    <input type="checkbox" value="kotlin" class="tech"><label>Kotlin</label> 
+                    <input type="checkbox" value="swift" class="tech"><label>Swift</label> 
+                    <input type="checkbox" value="node" class="tech"><label>Node</label> 
+                    <input type="checkbox" value="pandas" class="tech"><label>Pandas</label>
+                    <input type="checkbox" value="api" class="tech"><label>API</label> 
+                </div> 
+            </fieldset> 
+
+            <fieldset>
+                <label>Languages: </label>
+                <ul id="languages">
+                    <li>    
+                        <label>English: <select class="dropdown proficiency" required> 
+                            <option value="" selected hidden disabled>Proficiency</option>
+                            <option value="en-native">Native</option>
+                            <option value="en-advanced">Advanced</option>
+                            <option value="en-intermediate">Intermediate</option>
+                            <option value="en-beginner">Beginner</option>
+                        </select></label>
+                    </li> 
+                    <li>
+                        <label>Spanish: <select class="dropdown proficiency" required> 
+                            <option value="" selected hidden disabled>Proficiency</option>
+                            <option value="sp-native">Native</option>
+                            <option value="sp-advanced">Advanced</option>
+                            <option value="sp-intermediate">Intermediate</option>
+                            <option value="sp-beginner">Beginner</option>
+                        </select></label>
+                    </li> 
+                    <li>
+                        <label>Portuguese: <select class="dropdown proficiency" required> 
+                            <option value="" selected hidden disabled>Proficiency</option>
+                            <option value="po-native">Native</option>
+                            <option value="po-advanced">Advanced</option>
+                            <option value="po-intermediate">Intermediate</option>
+                            <option value="po-beginner">Beginner</option>
+                        </select></label>
+                    </li> 
+                </ul>
+            </fieldset>
+
+            <fieldset>
+                <label>Describe your previous working experiences:</label><textarea placeholder="Type your text here..."></textarea>  
+            </fieldset>
+
+            <div id="button">
+            <input type="submit" id="submit" value="Submit">
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <p>Contact me: <a href="https://www.linkedin.com/in/renatabarc/"><img src="https://img.icons8.com/color/48/undefined/linkedin.png"/></a></p>
+    </footer>
+
+  </body>
+</html>
